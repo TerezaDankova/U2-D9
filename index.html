@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Music Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<style>
+ 
+</style>
+</head>
+
+<body>     
+  
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(249, 113, 108);">
+    <a class="navbar-brand" href="#">&#x1F3B5</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#first-carousel">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fav-album">Favorite Albums</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hallOfShame">Hall Of Shame</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#first-carousel">Harry Styles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#top-24-songs">TOP 24</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="first-carousel" class="carousel slide" data-ride="carousel" data-interval="false" >
+    <ol class="carousel-indicators">
+        <li data-target="#first-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#first-carousel" data-slide-to="1"></li>
+        <li data-target="#first-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+            <img src="./albums/g1.jpeg"
+                class="d-block w-100" alt="..."
+                style="max-height: 840px; object-fit: cover; object-position: bottom">
+                <div class="box position-absolute" style="left: 18%; top: 20%;">
+                  <h1 class="display-4 text-white text-monospace" style="font-size: 120px;">HELLO, WORLD!</h1>
+                  <hr class="my-4" style="background-color:white">
+                  <p class="lead text-monospace" style="color:rgb(228, 179, 31)" >Listening is everything. Take a look on my favorite and hattest songs ever made.</p>
+                 
+                  <p class=" text-monospace mb-5" style="font-size: 12px; color:rgb(221, 199, 131)">“Music, once admitted to the soul, becomes a sort of spirit, and never dies.” ― Edward Bulwer Lytton.</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/019RaVc5zSH8in4qTFjbmM?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+        </div>
+        <div class="carousel-item position-relative">
+            <img src="./albums/g2.jpeg"
+                class="d-block w-100" alt="..." style="max-height: 840px; object-fit: cover; object-position: top">
+            <div class="carousel-caption d-none d-md-block text-left position-absolute" style="top: 10%; left: 20%;">
+                <div class="rounded p-3 position-relative" style="width: 60%;background-color: white;">
+                  <p class="text-dark text-center"style="font-size: 16px;" ><i>
+                    “If you play music with passion and love and honesty, then it will nourish your soul, heal your wounds and make your life worth living. 
+                    Music is its own reward.”</i></p>
+                  <h5 class="text-dark text-right font-weight-lighter">Sting</h5>
+                  <img class="position-absolute" src="./albums/sting.png" style="width: 200px; height: 200px; left: 64%; top:70%">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item position-relative">
+            <img src="./albums/g3.png"
+                class="d-block w-100" alt="..."
+                style="max-height: 840px; object-fit: cover; object-position: middle">
+            <div class="carousel-caption d-none d-md-block text-left position-absolute" style="top: 40%; left: 20%;">
+                <div class="rounded p-3 position-relative " style="width: 50%;background-color: white;">
+                  <p class="text-dark text-center"style="font-size: 16px;" ><i>“I think music in itself is healing. It's an explosive expression of humanity.
+                     It's something we are all touched by. No matter what culture we're from, everyone loves music."</i></p>
+                  <h5 class="text-dark text-right font-weight-lighter">Billy Joe</h5>
+                  <img class="position-absolute" src="./albums/BillyJoe.png" style="width: 200px; height: 200px; left: 53%; top:70%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#first-carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#first-carousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+  </div>
+  
+
+  <section class="songs-list" id="songs-list">
+
+    <div class="container-fluid">
+       <div class="row mb-5 mx-5 my-5">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(142, 114, 88); border-width: 4px;">
+                <img class="card-img-top" src="./albums/Billie_Eilish-Happier_Than_Ever.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Happier Than Ever</h5>
+                  <p class="card-text text-muted">Billie Eilish</p>
+                  <p class="card-text font-weight-lighter">12 songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0JGOiO34nwfUdDrD612dOp?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(114, 114, 114); border-width: 4px;">
+                <img class="card-img-top" src="./albums/Blanco-blue_celeste.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Celeste</h5>
+                  <p class="card-text text-muted">Blanco</p>
+                  <p class="card-text font-weight-lighter">10 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7zFt7hLRPxemmlzVzg5uec?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(108, 35, 35); border-width: 4px;">
+                <img class="card-img-top" src="./albums/Coez-E_sempre_bello.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">E sempre Bello</h5>
+                  <p class="card-text text-muted">Coez</p>
+                  <p class="card-text font-weight-lighter">10 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/10qyDIB3pverR0MvhOFDVy?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(244, 182, 201); border-width: 4px;">
+                <img class="card-img-top" src="./albums/tyler.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Igor</h5>
+                  <p class="card-text text-muted">Tyler, The Creator</p>
+                  <p class="card-text font-weight-lighter">12 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5zi7WsKlIiUXv09tbGLKsE?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(80, 209, 207); border-width: 4px;">
+                <img class="card-img-top" src="./albums/GAZZELLE-OK.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">OK</h5>
+                  <p class="card-text text-muted">Gazzelle</p>
+                  <p class="card-text font-weight-lighter">14 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3Y4qJnPihpHfdK3rre9GFA?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:bisque; border-width: 4px;">
+                <img class="card-img-top" src="./albums/Harry_Styles-Harry's_house.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Harry's House</h5>
+                  <p class="card-text text-muted">Harry Styles</p>
+                  <p class="card-text font-weight-lighter">15 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5r36AJ6VOJtp00oxSkBZ5h?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(130, 125, 194); border-width: 4px;">
+                <img class="card-img-top" src="./albums/Olivia_Rodrigo-Sour.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Sour</h5>
+                  <p class="card-text text-muted">Olivia Rodrigo</p>
+                  <p class="card-text font-weight-lighter">16 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6s84u2TUpR3wdUv4NgKA2j?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4">
+            <div class="card" style="border-color:rgb(213, 133, 180); border-width: 4px;">
+                <img class="card-img-top" src="./albums/Peggy_Gou-Dj_kiks.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Dj Kikse</h5>
+                  <p class="card-text text-muted">Peggy Gou</p>
+                  <p class="card-text font-weight-lighter">12 Songs</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2NeSirLM2VHQW4upn0nMfB?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+              </div>
+        </div>
+      </div>   
+    </div>
+  </section>
+
+
+
+
+  <section class="fav-album p-3 mt-5 mb-5 bg-white" id="fav-album">
+    
+  
+    <div class="container-fav-album">
+      <div class="position-relative">
+        <img src="./albums/g3.png" style="width:100%; height: 200px;">
+        <div class="container position-absolute" style="left: 0; top:44%">
+        <h1 class="display-4 text-center text-monospace text-white" style="font-size: 120px;">Favorite Album</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mx-5 my-5">
+       <div class="row d-flex ">
+        <div class="col-4 d-flex justify-content-around">
+            <div class="card shadow" style="width: 70%;">
+                <img class="card-img-top" src="./albums/Blanco-blue_celeste.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Celeste</h5>
+                  <p class="card-text text-muted">Blanco</p>
+                  <p class="card-text font-weight-lighter">Duration: 55 min</p>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7zFt7hLRPxemmlzVzg5uec?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+        </div>
+       <div class="container-table col-8 d-flex justify-content-center ">
+          <table class="table table-striped " style="width: 70%;">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" style="color: blueviolet;">1</th>
+                  <td>Mezz'ora Di Sole</td>
+                  <td>1:56</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(188, 149, 225);">2</th>
+                  <td>Figli Di Puttana</td>
+                  <td>2:14</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(86, 168, 196);">3</th>
+                  <td>Sai Cosa C'e'</td>
+                  <td>2:30</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(11, 148, 172);">4</th>
+                  <td>Lucciole</td>
+                  <td>2:57</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(133, 225, 181);">5</th>
+                  <td>Notti In Bianco</td>
+                  <td>2:57</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(13, 192, 4);">6</th>
+                  <td>Blue Celeste</td>
+                  <td>3:27</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(230, 224, 111);">7</th>
+                  <td>Finché Non Mi Seppelliscono</td>
+                  <td>2:57</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(211, 221, 11);">8</th>
+                  <td>Pornografia</td>
+                  <td>2:37</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(231, 123, 104);">9</th>
+                  <td>David</td>
+                  <td>2:48</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(250, 67, 0);">10</th>
+                  <td>Ladro Di Fiori</td>
+                  <td>3:19</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="color: rgb(130, 31, 31);">11</th>
+                  <td>Afrodite</td>
+                  <td>3:12</td>
+                </tr>
+               
+              </tbody>
+          </table>
+      </div>
+    </div>
+          
+    </div>
+    
+     
+  </section>
+
+
+
+  <section class="hallOfShame mb-5 mt-5" style="background: rgb(255,255,255);
+  background: linear-gradient(343deg, rgba(255,255,255,0.5228685224089635) 0%, rgba(159,100,203,0.7609637605042017) 31%, rgba(228,141,141,1) 75%, rgba(255,232,232,1) 100%);" id="hallOfShame">
+        
+
+    <div class="container-fluid ">
+     
+      
+      <div class="container p-3 mt-5 position-relative">
+          <h1 class="display-4 text-center text-monospace" style="font-size: 120px; color:rgb(193, 191, 192)">Hall Of Shame</h1>
+          <p class="position-absolute" style="font-size: 90px; left:3%;top:33%">	&#128128;</p>
+      </div>
+    
+      <div class="container-fluid" style="width: 80%;">
+        <div class="row mb-6 mx-6 my-6" >
+         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+             <div class="card shadow" style="border-color:rgb(81, 81, 81); border-width: 2px;">
+                 <img class="card-img-top" src="./albums/pop-faith.png" alt="Card image cap">
+                 <div class="card-body">
+                   <h5 class="card-title">Faith</h5>
+                   <p class="card-text text-muted">Pop Smoke</p>
+                   <p class="card-text font-weight-lighter">11 songs</p>
+                   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2MlT9dGKoGH2hsfcz7UUXL?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                 </div>
+               </div>
+         </div>
+         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+             <div class="card" style="border-color:rgb(145, 30, 30); border-width: 2px;">
+                 <img class="card-img-top" src="./albums/id-mer.jpeg" alt="Card image cap">
+                 <div class="card-body">
+                   <h5 class="card-title">Mercury Act 1</h5>
+                   <p class="card-text text-muted">Imagine Dragons</p>
+                   <p class="card-text font-weight-lighter">15 Songs</p>
+                   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6yiXkzHvC0OTmhfDQOEWtS?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                 </div>
+               </div>
+         </div>
+         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3">
+             <div class="card" style="border-color:rgb(121, 196, 215); border-width: 2px; ">
+                 <img class="card-img-top" src="./albums/mm-expensive pain.jpeg" alt="Card image cap">
+                 <div class="card-body">
+                   <h5 class="card-title">Expensive Pain</h5>
+                   <p class="card-text text-muted">Meek Mill</p>
+                   <p class="card-text font-weight-lighter">10 Songs</p>
+                   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3cLQ49Ll3nGRkw3HSSk92K?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                 </div>
+               </div>
+         </div>
+         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 mb-5">
+             <div class="card" style="border-color:rgb(148, 31, 31); border-width: 2px;">
+                 <img class="card-img-top" src="./albums/zayn-nobody.jpeg" alt="Card image cap">
+                 <div class="card-body">
+                   <h5 class="card-title">Nobody Listening</h5>
+                   <p class="card-text text-muted">Zayn</p>
+                   <p class="card-text font-weight-lighter">14 Songs</p>
+                   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2yuQqhSklmfWgn8lmJNk5t?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                 </div>
+               </div>
+         </div>
+
+    </div>
+  </section>
+
+  <section class="hallOfFame" style="background-color: rgb(255, 255, 255);" id="hallOfFame">
+
+    <div id="favorite-artist" class= "position-relative">
+      <div class="col-12">
+        <img class="rounded mx-auto d-block" src="./albums/hs background.jpeg">
+        <div class=" text-image position-absolute" style="left: 25%; top: 50px;">
+          <p class="text-center text-monospace text-info" style="font-size: 120px;">Harry Styles</p>
+          <hr class="my-3">
+          <p class="text-center text-monospace text-white" >My favorite Artist!</p>
+        </div>
+      
+
+        <div class="card position-absolute border-0 rounded-circle" style="width: 400px; top: 20%; left: 16%;">
+          <div class="card-body " style=" border-radius:12px; background: #562524">
+            <h3 class="card-title text-monospace text-info">About</h3>
+            <h6 class="card-subtitle text-muted text-monospace">Biography</h6>
+            <p class="card-text text-monospace text-white " style="font-size: 12px;">Harry Edward Styles (born 1 February 1994) is an English singer, songwriter, and actor. His musical career began in 2010 as a solo contestant on the British music competition series The X Factor. Following his elimination, he was brought back to join the boy band One Direction, who went on to become one of the best-selling boy bands of all time before going on an indefinite hiatus in 2016..</p>
+            <a href="https://www.hstyles.co.uk/" class="card-link text-monospace text-info " style="font-size:10px;">Offical website</a>
+            <iframe class="mt-2" style="border-radius:12px" src="https://open.spotify.com/embed/track/4j6kId9QIqhoXvqHKgSKa0?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container position-absolute" style="top: 58%; left: 7%; width: 800px;">
+        <div class="row mt-4">
+          <div class="col-3">
+            <img src="./albums/hs01.jpeg" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs02.jpeg" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs03.jpeg" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3" > 
+            <img src="./albums/hs04.webp" style="width: 100%; height: 100%;">
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-3">
+            <img src="./albums/hs05.webp" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs06.webp" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs07.webp" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs08.jpeg" style="width: 100%; height: 100%;">
+          </div>
+        </div>  
+        <div class="row mt-4">
+          <div class="col-3">
+            <img src="./albums/hs09.jpeg" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs10.webp" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs11.jpeg" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-3">
+            <img src="./albums/hs12.jpeg" style="width: 100%; height: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section>  
+
+
+   <div class="top-24-songs row mx-5 my-5" id="top-24-songs">
+
+      <div class="col-12 container p-3 mt-5 mb-5">
+          <h1 class=" text-center text-monospace position-relative" style="font-size: 120px; color: #c552ac;">TOP 24</h1>
+          <p class="text-center text-monospace position-absolute" style="font-size: 80px; color: #c992bd; left:50%;top: 50%;" >Songs</p>
+      </div>
+      
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1PWOkqMORYdGa0OEh2GaXM?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4RVwu0g32PAqgUiJoXsdF8?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5bvsNn7f4m0MTCuUQkMZGY?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0lwo64aO3YEjcnJGTFHYR1?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0O6u0VJ46W86TxN9wgyqDj?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6IdiuMw1FSAvU3e6bgWQVX?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ExlVB6Z8D8qDawnKXRjP1?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4j6kId9QIqhoXvqHKgSKa0?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5xwzmfxNAxZwMjznQ0eVXL?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/36o4taPyOdnOMf01ERmn9a?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6JIC3hbC28JZKZ8AlAqX8h?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6P3PZYn8l4kQWI6aGLZzez?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+   
+    <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4FqMPJlvfY5Nfo3gRKcNxl?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rmo8F54jFF8OgYsqTxm5d?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7ya7Jv4hJ9W0Baz7h9nL7E?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/22PTmk4mzAVi92WiQPAcFp?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5fwSHlTEWpluwOM0Sxnh5k?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0siYMEsGrzzzlWLXK5zJfS?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3jjujdWJ72nww5eGnfs2E7?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Dtv5iaqPWtftabQfjBvxh?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/14DUyQybUWcWgZAxmVnWUJ?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1f3yAtsJtY87CTmM8RLnxf?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-5">
+        <div class="card shadow bg-white border-0">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/48UPSzbZjgc449aqz8bxox?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+   </div> 
+  </section>   
+  
+
+
+  <footer class="flex mt-5 pt-5 pb-1 " style="background: rgb(193,143,46); background: linear-gradient(343deg, rgba(193,143,46,0.5228685224089635) 0%, rgba(228,215,193,1) 50%, rgba(255,255,255,1) 100%);">
+    <div class="text-center">
+      <p class="text-center text-white">  See my Spotify account!</p>
+      <button type="button" class=" text-center mb-2 rounded text-white" style="border:rgb(130, 31, 31);background-color:rgb(148, 31, 31)">LET'S GO</button>
+      <p class="text-center text-white">&copy; Tereza Dankova</i></p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
