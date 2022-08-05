@@ -1,0 +1,15 @@
+
+
+
+.fadeIn {
+  animation: fade-in 6s ease-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
