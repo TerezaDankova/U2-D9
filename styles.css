@@ -31,6 +31,10 @@
   animation-timing-function: linear;
 }
 
+.d-none {
+  display: none;
+}
+
 @keyframes example1 {
   from {color: white;}
   to {color: #ffce09}
